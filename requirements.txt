@@ -1,0 +1,17 @@
+# Python dependencies:  pip install -r requirements.txt
+# Tested with Python 3.12.
+
+sympy==1.14.0
+networkx==3.6.1
+
+# ---------------------------------------------------------------------------
+# SYSTEM dependency (NOT pip-installable): nauty's `geng`, used by
+# enumerate_check.py to generate every connected graph on n vertices.
+#
+#   Debian / Ubuntu :  apt-get install nauty     (installs the binary as `nauty-geng`)
+#   macOS (Homebrew):  brew install nauty
+#   from source     :  https://pallini.di.uniroma1.it/
+#
+# enumerate_check.py searches PATH for either `geng` or `nauty-geng`.
+# Only enumerate_check.py needs it; the symbolic and random-sampling layers do not.
+# ---------------------------------------------------------------------------
